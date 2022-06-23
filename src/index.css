@@ -1,0 +1,107 @@
+:root {
+  --heading-font: 'Poppins';
+  --body-font: 'Open Sans';
+  --bold: 600;
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+  font-size: 16px;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #b4b3b3;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  color: #2B283A;
+}
+a {
+  color: #918E9B;
+  font-size: 0.75rem;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+ font-weight: 800;
+ margin: 0.2em 0em 0.4em;
+}
+.container {
+  width: 550px;
+  max-width: 70%;
+  min-width: 300px;
+  margin: 3em auto 2em;
+  background-color: #ffffff;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  background-color: #F55A5A;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+.header img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
+}
+.destinations {
+  padding: 1em 2em 1em;
+  width: 100%;
+}
+.location {
+  display: flex;
+  margin-bottom: 1em;
+}
+.location-thumbnail {
+  height: 168px;
+  width: 126px;
+  border-radius: 5px;
+  margin-right: 2em;
+}
+.location-data {
+  display: flex;
+  margin-top: 0.5em;
+}
+.location-country-name {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.location-icon {
+  width: 9px;
+  height: 12px;
+  margin-right: 0.5em;
+}
+.date-info {
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+.location-brief {
+  font-size: 0.75rem;
+  margin: 0.5em 0em;
+}
+footer {
+  text-align: center;
+  color: #F55A5A;
+}
+
+/* MEDIA QUERY */
+@media (max-width:600px) {
+  .location {
+    flex-direction: column;
+  }
+  .location-thumbnail {
+    width: 100%;
+  }
+}
